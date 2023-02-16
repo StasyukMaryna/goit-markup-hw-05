@@ -60,7 +60,7 @@
       <section class="service">
         <div class="container">
           <h1 class="service-title">Effective Solutions for Your Business</h1>
-          <button class="service-button button" type="button">
+          <button class="service-button button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -425,5 +425,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg class="modal-close-button-vector" width="8" height="8">
+            <use href="./images/sprite.svg#icon-close-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
